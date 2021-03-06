@@ -3,7 +3,7 @@ import java.util.ArrayList;
 
 class Main {
   public static void main(String[] args) {
-    System.out.println("Welcome to Bingo. It is still a WIP. If the board has duplicates, make sure to rerun the program, but hopefully it does not.");
+    System.out.println("Welcome to Bingo. It is still a WIP. If the board has duplicates, make sure to rerun the program, but hopefully it does not. I am planning to add a feature where you can mark your numbers.");
     int[][] board = new int[4][4];
     ArrayList<Integer> Nums = new ArrayList<Integer>();
     createBoard(Nums, board);
