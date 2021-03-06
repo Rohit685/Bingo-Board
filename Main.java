@@ -20,6 +20,7 @@ public static ArrayList<Integer> createBoard(ArrayList<Integer> Nums, int[][] bo
   {
     Nums.add((int) (Math.random()*(100- 10)) + 10);
     Nums = removeDup(Nums);
+		System.out.println(Nums);
   }
   for(int r = 0; r < board.length; r++)
   {
