@@ -17,11 +17,15 @@ class Main {
 				System.out.println("Thank you for playing!");
 				break;
 			}
-			try {
-				int number = Integer.parseInt(userInput);
-			} catch (NumberFormatException ex) {
-				System.out.println("Please retry");
+			if(checkInput(userInput) == false)
+			{
+				continue;
 			}
+			int number = Integer.parseInt(userInput);
+			markBoard(number, board);
+			printBoard(board);
+			
+			
 
 		}
 
@@ -90,6 +94,17 @@ class Main {
 				}
 			}
 		}
+	}
+
+	public static boolean checkInput(String userInput)
+	{
+			try {
+				int stringToInt = Integer.parseInt(userInput);
+			} catch (NumberFormatException ex) {
+				return false;
+			}
+			return true;
+
 	}
 
 }
