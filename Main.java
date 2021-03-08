@@ -1,13 +1,32 @@
 import java.util.*;
 import java.util.ArrayList;
-
 class Main {
   public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
     System.out.println("Welcome to Bingo. It is still a WIP. If the board has duplicates, make sure to rerun the program, but hopefully it does not. I am planning to add a feature where you can mark your numbers. Have Fun!");
     int[][] board = new int[4][4];
     ArrayList<Integer> Nums = new ArrayList<Integer>();
     createBoard(Nums, board);
     printBoard(board);
+		while(true)
+		{
+				System.out.println("Enter in picked numbers and it will be marked in as 00. Type in quit to exit the game");
+				String userInput = input.nextLine();
+				if(userInput.equals("quit"))
+				{
+					System.out.println("Thank you for playing!");
+					break;
+				}
+				try{
+   					 int number = Integer.parseInt(userInput);
+					 }
+				catch (NumberFormatException ex) {
+						System.out.println("Please retry");
+					}
+
+
+
+		}
    
     
   }
@@ -20,6 +39,7 @@ public static ArrayList<Integer> createBoard(ArrayList<Integer> Nums, int[][] bo
   {
     Nums.add((int) (Math.random()*(100- 10)) + 10);
     Nums = removeDup(Nums);
+
   }
   for(int r = 0; r < board.length; r++)
   {
