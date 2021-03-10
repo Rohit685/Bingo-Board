@@ -11,7 +11,7 @@ class Main {
 		createBoard(Nums, board);
 		printBoard(board);
 		while (true) {
-			System.out.println("Enter in picked numbers and it will be marked in as 00. Type in quit to exit the game");
+			System.out.println("Enter in picked numbers and it will be marked in as 0. Type in quit to exit the game");
 			String userInput = input.nextLine();
 			if (userInput.equals("quit")) {
 				System.out.println("Thank you for playing!");
@@ -90,7 +90,7 @@ class Main {
 			{
 				if(board[r][c] == number)
 				{
-					board[r][c] = 00;
+					board[r][c] = 0;
 				}
 			}
 		}
