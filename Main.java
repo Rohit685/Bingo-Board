@@ -5,7 +5,7 @@ class Main {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		System.out.println(
-				"Welcome to Bingo. It is still a WIP. If the board has duplicates, make sure to rerun the program, but hopefully it does not. I am planning to add a feature where you can mark your numbers. Have Fun!");
+				"Welcome to Bingo. If the board has duplicates, make sure to rerun the program, but hopefully it does not. Have Fun!");
 		int[][] board = new int[4][4];
 		ArrayList<Integer> Nums = new ArrayList<Integer>();
 		createBoard(Nums, board);
