@@ -107,15 +107,6 @@ class Main {
 
 	}
 
-/*	public static int giveNumber(String userInput)
-	{
-		if(userInput == "give number")
-		{
-			int number = (int)(Math.random() * (100 - 10)) + 10;
-		}
-		return number;
-	}
-	*/
 
 
 }
